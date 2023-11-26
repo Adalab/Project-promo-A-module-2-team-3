@@ -1,5 +1,96 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background-image: url("../images/bg-adalab.png");
+// body {
+//   // padding: 2rem;
+//   // height: 100vh;
+// }
+
+.body {
+  background-color: $color-bg-white-four;
+  
+  &__fttitle {
+    font-family: $font-landing;
+    color: $color-dull-orange;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0rem 0rem 0.5rem 0rem;
+
+    &--content {
+    font-family: $font-main;
+    color: $color-dark-green-blue;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0rem 1.7rem 2rem 1.7rem;
+    }
+
+  }
+
+  .shortcut {
+    margin: 0rem 1.6rem 0rem 1.6rem;
+    border: solid 1.6px $color-dull-orange;
+    border-radius: 4px;
+    // opacity: 0.21;
+    width: 16.75rem;
+    height: 4.6rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: $font-main;
+    color: $color-gunmetal;
+    font-size: 0.8rem;
+    
+    
+    &__desing {
+      background-color: black;
+      width: 3.7rem;
+      height: 3rem;
+      margin: 0.6rem 0rem 0.6rem 0rem;
+
+      &--textdesing {
+        text-align: center;
+        margin-top: 1.8rem;
+      }
+      }
+
+    &__fullout {
+      background-color: black;
+      width: 3.7rem;
+      height: 3rem;
+      margin: 0.6rem 0rem 0.6rem 0rem;
+
+      &--textfullout{
+        text-align: center;
+        margin-top: 1.8rem;
+      }
+    }
+
+    &__share {
+      background-color: black;
+      width: 3.7rem;
+      height: 3rem;
+      margin: 0.6rem 0rem 0.6rem 0rem;
+
+      .textshare {
+        text-align: center;
+        margin-top: 1.8rem;
+      }
+    
+    }
+  }
+
+  .button__start {
+    background-color: $color-dirty-blue;
+    width: 8rem;
+    height: 2.6rem;
+    border-radius: 2rem;
+    margin: 2.4rem 6rem 1.8rem 6rem;
+    //averiguar por que tiene ese borde así
+
+    font-family: $font-main;
+    font-weight: 600; //me parece muy bold
+    
+    .gosht__link {
+      text-decoration: none;
+      color: $color-bg-white-two;
+    }
+    
+  }
+
 }
