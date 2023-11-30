@@ -1,26 +1,60 @@
 // Estilos del formulario general
 .form {
-  background-color: $color-bg-white-two;
+  // background-color: $color-bg-white-two;
 }
+
 .form__section--legend {
   font-family: $font-main;
   font-size: 18px;
-  color: red;
+  color: $color-gunmetal;
   display: flex;
+  flex-direction: row;
 }
 
-//   &section--icon {
-//     color: $color-dull-orange;
-//     height: 18px;
-//     width: 21px;
-//   }
+.section__div1 {
+  display: flex;
+  flex-direction: column;
+  color: $color-dark-green-blue;
+  font-size: 14px;
+  margin: 15px 20px;
 
-//   &section--legend {
-//     font-family: $font-main;
-//     font-size: 18px;
-//     color: $color-gunmetal;
-//   }
-// }
+  &--label {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+  }
+
+  &--input {
+    border: solid 1px $color-input-form;
+    width: 280px;
+    height: 30px;
+   
+  }
+}
+.section__divImg {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &--addImg {
+    background-color: $color-dull-orange;
+    color: $color-bg-white-two;
+    width: 140px;
+    height: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--square{
+    border: solid 1px $color-input-form;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 // Estilos de Lara
 
