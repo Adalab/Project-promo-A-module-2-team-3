@@ -36,43 +36,58 @@
     color: $color-gunmetal;
     font-size: 0.8rem;
     
-    
     &__desing {
-      background-color: black;
+
       width: 3.7rem;
       height: 3rem;
-      margin: 0.6rem 0rem 0.6rem 0rem;
+      margin: 1.3rem 0rem 0.6rem 0rem;
+
+      &--icon {
+        font-size: 1.3rem;
+        padding: 0rem 0.8rem 0rem 0.8rem;
+        color: $color-dull-orange;
+      }
 
       &--textdesing {
         text-align: center;
-        margin-top: 1.8rem;
+        margin-top: 0.1rem;
       }
       }
 
     &__fullout {
-      background-color: black;
       width: 3.7rem;
       height: 3rem;
       margin: 0.6rem 0rem 0.6rem 0rem;
 
+      &--icon {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem 0rem 1rem;
+        color: $color-dull-orange;
+      }
+
       &--textfullout{
         text-align: center;
-        margin-top: 1.8rem;
+        margin-top: 0.1rem;
       }
     }
 
     &__share {
-      background-color: black;
       width: 3.7rem;
       height: 3rem;
       margin: 0.6rem 0rem 0.6rem 0rem;
 
-      .textshare {
+      &--icon {
+        font-size: 1.3rem;
+        padding: 0.6rem 1rem 0rem 1.2rem;
+        color: $color-dull-orange;
+      }
+
+      &--textshare {
         text-align: center;
         margin-top: 1.8rem;
       }
-    
     }
+
   }
 
   .button__start {
@@ -81,8 +96,7 @@
     height: 2.6rem;
     border-radius: 2rem;
     margin: 2.4rem 6rem 1.8rem 6rem;
-    //averiguar por que tiene ese borde así
-
+    border-style: none;
     font-family: $font-main;
     font-weight: 600; //me parece muy bold
     
@@ -110,23 +124,42 @@
     margin: 0rem 11rem 2rem 11rem;
      }
     }
-  }
 
   .shortcut {
-      margin: 0rem 16rem 0rem 16rem;
-        border: solid 1.6px $color-dull-orange;
-        border-radius: 4px;
-        // opacity: 0.21;
-        width: 20.3rem;
-        height: 5.3rem;
-        display: flex;
-        justify-content: space-evenly;
-        font-family: $font-main;
-        color: $color-gunmetal;
-        font-size: 1.2rem;
+    margin: 0rem 11rem 0rem 11rem;
+    width: 26rem;
+    height: 6rem;
+    font-size: 1.2rem;
+
+    &__desing {
+
+      &--icon {
+        font-size: 1.8rem;
+      }
     }
 
+    &__fullout--icon{
+        font-size: 2rem;
+      }
+
+    &__share--icon {
+        font-size: 2rem;
+      }
+  }
+
+  }
+
+  .button__start {
+    margin: 2.4rem 20rem 1.8rem 20rem;
+  }
+
 }
+
+
+
+
+
+
   
   //   &__desing {
   //     background-color: black;
@@ -163,5 +196,3 @@
   //       margin-top: 1.8rem;
   //     }
     
-  //   }
-  // }
