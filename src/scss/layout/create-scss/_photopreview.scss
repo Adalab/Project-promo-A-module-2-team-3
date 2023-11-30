@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+    .photoPreview{
+        width: 100vw;
+        background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .resetBtn {
+        height: 30px;
+        width: 75px;
+        margin-top: 38px;
+        appearance: none;
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: transparent;
+    }
+
+    .cardPreview {
+        background-color: white;
+        box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+        position: relative;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
