@@ -1,14 +1,48 @@
 // Estilos del formulario general
-.form {
-   background-color: $color-bg-white-two;
+form {
+  background-color: $color-bg-white-two;
 }
-
-.form__section--legend {
-  font-family: $font-main;
-  font-size: 18px;
-  color: $color-gunmetal;
+hr {
+  width: 90%;
+  margin: 10px auto;
+}
+fieldset {
+  border: none;
+}
+.fieldset__fillout {
+  padding-bottom: 20px;
+}
+.title__section {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 0px 20px;
+
+  &--box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    &--icon {
+      color: $color-dull-orange;
+      width: 21px;
+      height: 18px;
+    }
+
+    &--legend {
+      font-family: $font-main;
+      font-size: 18px;
+      color: $color-gunmetal;
+    }
+  }
+
+  &--icon2 {
+    width: 18px;
+    height: 16px;
+    color: $color-gunmetal;
+  }
 }
 
 .section__div1 {
@@ -16,19 +50,17 @@
   flex-direction: column;
   color: $color-dark-green-blue;
   font-size: 14px;
-  margin: 15px 20px;
+  padding: 0px 20px;
+  // margin: 15px 20px 15px 20px;
 
   &--label {
     margin-top: 15px;
     margin-bottom: 10px;
-
   }
 
   &--input {
     border: solid 1px $color-input-form;
-    width: 280px;
     height: 30px;
-   
   }
 }
 .section__divImg {
@@ -46,7 +78,7 @@
     justify-content: center;
     align-items: center;
   }
-  &--square{
+  &--square {
     border: solid 1px $color-input-form;
     height: 30px;
     width: 30px;
