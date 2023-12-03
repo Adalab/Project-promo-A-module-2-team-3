@@ -19,3 +19,24 @@
   }
 
 }
+
+@media all and (min-width: 768px) {
+
+  .page__footer__general {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 1rem;
+    
+    &--text {
+      margin-left: 3rem;
+    } 
+    
+    &--adalogo {
+      margin: 0rem 2rem 0rem 0rem;
+    }
+
+   }
+   
+  }
+
