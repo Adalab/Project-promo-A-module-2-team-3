@@ -1,4 +1,5 @@
 // Estilos del formulario general
+
 form {
   background-color: $color-bg-white-two;
 }
@@ -88,12 +89,31 @@ fieldset {
   }
 }
 
-// Estilos de Lara
+// Tablet
+@media (min-width: 768px) and (max-width: 1280px) {
+  .section__form {
+    display: flex;
+    flex-direction: row-reverse;
+    // flex-grow:
+    padding: 20px;
 
-// Diseña
+    &--box {
+      width: 100vw;
+    }
+  }
+}
 
-// Comparte
+//Desktop
 
-// Estilos de Sara
+@media (min-width: 1280px) {
+  .section__form {
+    display: flex;
+    flex-direction: row-reverse;
+    // flex-grow:
+    padding: 20px;
 
-//Rellena
+    &--box {
+      width: 100vw;
+    }
+  }
+}
