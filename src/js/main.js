@@ -4,6 +4,18 @@ console.log('>> Ready :)');
 
 //hay que decir el orden en el que tiene quedar
 
+const data = {
+    palette: '',
+    name: '',
+    job: '',
+    photo: '',
+    email: '',
+    phone: '',
+    linkedin: '',
+    github: '',
+};
+console.log (data);
+
 import './collapsible.js';
 import './preview-content.js';
 import './preview-palettes.js';
