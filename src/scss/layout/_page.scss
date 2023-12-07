@@ -126,17 +126,14 @@
     }
 
   .shortcut {
-    margin: 0rem 11rem 0rem 11rem;
+    margin: auto;
     width: 26rem;
     height: 6rem;
     font-size: 1.2rem;
 
-    &__desing {
-
-      &--icon {
+    &__desing--icon {
         font-size: 1.8rem;
       }
-    }
 
     &__fullout--icon{
         font-size: 2rem;
@@ -147,52 +144,19 @@
       }
   }
 
+  .button__start {
+    margin: 12rem 20rem 6rem 20rem;
   }
 
-  .button__start {
-    margin: 2.4rem 20rem 1.8rem 20rem;
   }
 
 }
 
 
+ @media all and (min-width: 1024px) {
 
+  .button__start {
+    margin: 0rem 40rem 0rem 40rem;
+  } 
 
-
-
-  
-  //   &__desing {
-  //     background-color: black;
-  //     width: 3.7rem;
-  //     height: 3rem;
-  //     margin: 0.6rem 0rem 0.6rem 0rem;
-
-  //     &--textdesing {
-  //       text-align: center;
-  //       margin-top: 1.8rem;
-  //     }
-  //     }
-
-  //   &__fullout {
-  //     background-color: black;
-  //     width: 3.7rem;
-  //     height: 3rem;
-  //     margin: 0.6rem 0rem 0.6rem 0rem;
-
-  //     &--textfullout{
-  //       text-align: center;
-  //       margin-top: 1.8rem;
-  //     }
-  //   }
-
-  //   &__share {
-  //     background-color: black;
-  //     width: 3.7rem;
-  //     height: 3rem;
-  //     margin: 0.6rem 0rem 0.6rem 0rem;
-
-  //     .textshare {
-  //       text-align: center;
-  //       margin-top: 1.8rem;
-  //     }
-    
+  }

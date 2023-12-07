@@ -24,6 +24,7 @@
   
   .page__header__boximg {
     display: flex;
+    justify-content:center;
     
     &--img {
       width: 26rem;
@@ -34,21 +35,29 @@
 
   }
 
-  //Medidas del header para create
+
+//Medidas del header para create
   // .page__header {
-    //   width: 48rem;
-    //   height: 7rem;
-    //   background-color: $color-bg-white-two;
-    // }
+  //     width: 48rem;
+  //     height: 7rem;
+  //     background-color: $color-bg-white-two;
+  //   }
     
-    // .page__header__boximg {
-    //   display: flex;
+  //   .page__header__boximg {
+  //     display: flex;
      
-    //   &--img {
-    //     margin: 2rem 32.9rem 1.8rem 2.5rem;
-    //     width: 12.5rem;
-    //     height: 3rem;
-    //   }
+  //     &--img {
+  //       margin: 2rem 32.9rem 1.8rem 2.5rem;
+  //       width: 12.5rem;
+  //       height: 3rem;
+  //     }
+  //   }
+
+  //   // media Q para create table
+  //   .page__header__boximg {
+  //     display: flex;
+  //   }
+
+  // @media all and (min-width: 1024px)
 
 
-    
