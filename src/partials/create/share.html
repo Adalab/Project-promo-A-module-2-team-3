@@ -1,7 +1,18 @@
-<fieldset class="form__share">
-    <legend>COMPARTE</legend>
-    <button class="form__share-createcard">CREAR TARJETA</button>
-    <p class="form__share-title">La tarjeta ha sido creada:</p>
-    <a href="#" class="form__share-link"></a>
-    <button class="form__share-btn">Compartir en twitter</button>
+<fieldset class="collapsible__fieldset">
+    <div class="collapsible__fieldset--share">
+        <i class="fa-regular collapsible__fieldset--icon"></i>
+        <legend class="collapsible__fieldset--legend">COMPARTE</legend>
+        <i class="fa-solid fa-chevron-up collapsible__fieldset--arrow-icon"></i>
+    </div>
+    <div class="share-container__button collapsible__content">
+        <button class="share-container__button--styles" id="share-btn">CREAR TARJETA</button>
+    </div>
+    <div class="share-container__twitter collapsible__content-twitter" id="share-div">
+        <div class="share__create-card">
+            <p class="share-container__twitter__tittle">La tarjeta ha sido creada:</p>
+        </div>
+        <a href="https://awesome-profile-card.com?id=A456DF0001" target="_blank"
+            class="share-container__twitter--link share-container__twitter__btn">
+            <i class="share-container__twitter--ico-twitter fab fa-twitter"></i>Compartir en twitter</a>
+    </div>
 </fieldset>
