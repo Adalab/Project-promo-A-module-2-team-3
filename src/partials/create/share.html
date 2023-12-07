@@ -1,21 +1,17 @@
-<fieldset class="form__share">
-    <section class="title__section">
-        <div class="title__section--share">
-            <span class="title__section--share--icon">
-                <i class="fa-regular "></i>
-            </span>
-
-    </section>
-    <legend>COMPARTE</legend>
+<fieldset class="collapsible__fieldset">
+    <div class="collapsible__fieldset--share">
+        <i class="fa-regular collapsible__fieldset--icon"></i>
+        <legend class="collapsible__fieldset--legend">COMPARTE</legend>
+        <i class="fa-solid fa-chevron-up collapsible__fieldset--arrow-icon"></i>
     </div>
-    <span class="title__section--icon2">
-        <i class="fa-solid fa-chevron-up"></i>
-    </span>
-    <div class="form__share--create">
-        <button class="form__share--createcard">CREAR TARJETA</button>
+    <div class="share-container__button collapsible__content">
+        <button class="share-container__button--styles" id="share-btn">CREAR TARJETA</button>
     </div>
-    <div class="form__share--sharebtn"></div>
-    <p class="form__share--title">La tarjeta ha sido creada:</p>
-    <a href="#" class="form__share--link"></a>
-    <button class="form__share--btn ">Compartir en twitter</button>
+    <div class="share-container__twitter collapsible__content-twitter" id="share-div">
+        <div class="share__create-card">
+            <p class="share-container__twitter__tittle">La tarjeta ha sido creada:</p>
+        </div>
+        <a href="#" class="share-container__twitter--link"></a><i
+            class="share-container__twitter--ico-twitter fab fa-twitter"></i>Compartir en twitter</a>
+    </div>
 </fieldset>

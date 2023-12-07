@@ -1,21 +1,34 @@
 <form action="" class="form">
-    <fieldset class="fieldset__desing">
-        <section class="title__section">
-            <div class="title__section--design">
-                <span class="title__section--design--icon">
-                    <i class="fa-regular "></i>
-                </span>
-                <legend class="title__section--legend">DISEÑA</legend>
-            </div>
-            <span class="title__section--icon2">
-                <i class="fa-solid fa-chevron-up"></i>
-            </span>
-        </section>
-        <p class="form__design-title">COLORES</p>
-        <div class="form__design-palette">
-            <input type="radio" name="pallette" value="azul">
-            <input type="radio" name="pallette" value="rojo">
-            <input type="radio" name="pallette" value="naranja">
+    <fieldset class="collapsible__fieldset">
+        <div class="collapsible__fieldset--design">
+            <i class="far fa-object-ungroup collapsible__fieldset--icon"></i>
+            <legend class="collapsible__fieldset--legend">DISEÑA</legend>
+            <i class="fa-solid fa-chevron-up collapsible__fieldset--arrow-icon"></i>
         </div>
+        <div class="collapsible__colours">
+            <h3 class="collapsible__colours--title">Colores</h3>
+            <div class="collapsible__colours--position">
+                <label class="js-palette1 collapsible__colours__palette" for="firstcolour">
+                    <input class="js-palette1 js-radio collapsible__colours__palette--radio" id="firstcolour"
+                        type="radio" value="1" name="colours" checked="checked" />
+                    <div class="collapsible__colours__palette--box bg-dark-green"></div>
+                    <div class="collapsible__colours__palette--box bg-dirty-blue"></div>
+                    <div class="collapsible__colours__palette--box bg-hospital-green"></div>
+                </label>
+                <label class="js-palette2 collapsible__colours__palette" for="secondcolour">
+                    <input class="js-palette2 js-radio collapsible__colours__palette--radio" id="secondcolour"
+                        type="radio" value="2" name="colours" />
+                    <div class="collapsible__colours__palette--box bg-dried-blood"></div>
+                    <div class="collapsible__colours__palette--box bg-rusty-red"></div>
+                    <div class="collapsible__colours__palette--box bg-tomato"></div>
+                </label>
+                <label class="js-palette3 collapsible__colours__palette" for="tertiarycolour">
+                    <input class="js-palette3 js-radio collapsible__colours__palette--radio" id="tertiarycolour"
+                        type="radio" value="3" name="colours" />
+                    <div class="collapsible__colours__palette--box bg-slate"></div>
+                    <div class="collapsible__colours__palette--box bg-faded-orange"></div>
+                    <div class="collapsible__colours__palette--box bg-light-grey-blue"></div>
+                </label>
+            </div>
     </fieldset>
 </form>

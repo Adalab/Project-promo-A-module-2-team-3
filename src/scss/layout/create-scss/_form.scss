@@ -1,0 +1,212 @@
+form {
+    background-color: $color-bg-white-two;
+  }
+  hr {
+    width: 90%;
+    margin: 10px auto;
+  }
+  fieldset {
+    border: none;
+  }
+  .fieldset__fillout {
+    padding-bottom: 20px;
+  }
+  .title__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 0px 20px;
+  
+    &--box1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  
+      &--icon {
+        color: $color-dull-orange;
+        width: 21px;
+        height: 18px;
+      }
+  
+      &--legend {
+        font-family: $font-main;
+        font-size: 18px;
+        color: $color-gunmetal;
+      }
+    }
+  
+    &--icon2 {
+      width: 18px;
+      height: 16px;
+      color: $color-gunmetal;
+    }
+  }
+  
+  .section__div1 {
+    display: flex;
+    flex-direction: column;
+    color: $color-dark-green-blue;
+    font-size: 14px;
+    padding: 0px 20px;
+    // margin: 15px 20px 15px 20px;
+  
+    &--label {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  
+    &--input {
+      border: solid 1px $color-input-form;
+      height: 30px;
+    }
+  }
+  .section__divImg {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  
+    &--addImg {
+      background-color: $color-dull-orange;
+      color: $color-bg-white-two;
+      width: 140px;
+      height: 30px;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--square {
+      border: solid 1px $color-input-form;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  // Tablet
+  @media (min-width: 768px) and (max-width: 1280px) {
+    .section__form {
+      display: flex;
+      flex-direction: row-reverse;
+      // flex-grow:
+      padding: 20px;
+  
+      &--box {
+        width: 100vw;
+      }
+    }
+  }
+  
+  //Desktop
+  
+  @media (min-width: 1280px) {
+    .section__form {
+      display: flex;
+      flex-direction: row-reverse;
+      // flex-grow:
+      padding: 20px;
+  
+      &--box {
+        width: 100vw;
+        }   
+    }
+  }
+//DISEÑA
+.collapsible {
+    &__fieldset {
+        &--design {
+            display: flex;
+            align-items: center;;
+            gap: 18px;
+            padding: 27px 0px 22px 20px;
+          
+        }
+        &--icon {
+            color: $color-dull-orange;
+            font-size: 18px;
+            align-self: center;
+        }
+        &--legend {
+            font-family: $font-main;
+            font-size: 18px;
+            color: $color-gunmetal
+        }
+        &--arrow-icon {
+            width: 18px;
+            height: 16px;
+            color: $color-gunmetal;
+        }
+    }
+    &__colours {
+        &--title {
+            font-family: $font-main;
+            font-size: 14px;
+            color: $color-gunmetal;
+            padding-left: 39px;
+            text-transform: uppercase;
+        }
+        &--position {
+            padding-left: 183px;
+        }
+    }
+    //&__palette {
+    //    display: flex;
+
+      //  &--radio {
+        //    align-self: center;
+          //  &--box {
+            //    width: 30px;
+              //  height: 25px;
+            //}
+
+        //}
+    //}
+}
+.collapsible__colours__palette {
+        display: flex;
+        padding-bottom: 20px;
+        justify-content: center;
+}
+.collapsible__colours__palette--radio {
+            align-self: center;
+}
+.collapsible__colours__palette--box {           
+    width: 30px;
+    height: 25px;
+            }
+.bg-dark-green {
+    background-color: #114e4e;
+    margin-left: 10px;
+  }
+.bg-dirty-blue {
+    background-color: #438792;
+  }
+.bg-hospital-green {
+    background-color: #a2deaf;
+  }
+.bg-dried-blood {
+    background-color: #420101;
+    margin-left: 10px;
+  }
+.bg-rusty-red {
+    background-color: #bd1010;
+  }
+.bg-tomato {
+    background-color: #e95626;
+  }
+.bg-slate {
+    background-color: #3e5b65;
+    margin-left: 10px;
+  }
+.bg-faded-orange {
+    background-color: #eab052;
+  }
+.bg-light-grey-blue {
+    background-color: #a0c0cf;
+  }
+
+
