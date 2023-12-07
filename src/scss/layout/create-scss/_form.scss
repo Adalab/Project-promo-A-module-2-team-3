@@ -1,6 +1,6 @@
 // Estilos del formulario general
-form {
-  background-color: $color-bg-white-two;
+.form {
+  background-color: red;
 }
 hr {
   width: 90%;
@@ -8,6 +8,9 @@ hr {
 }
 fieldset {
   border: none;
+}
+.fieldset__desing {
+  padding-bottom: 20px;
 }
 .fieldset__fillout {
   padding-bottom: 20px;
@@ -92,7 +95,31 @@ fieldset {
 
 // Diseña
 
+.form__design-title {
+  color: $color-gunmetal;
+  font-family: $font-main;
+  font-size: 14px;
+  padding-left: 39px;
+}
+
 // Comparte
+.form__share--title {
+  color: $color-gunmetal;
+  font-family: $font-main;
+  font-size: 18px;
+}
+.form__share--link {
+  font-family: $font-main;
+  color: $color-dull-orange;
+  font-size: 12px;
+}
+.form__share--btn {
+  background-color: red;
+  color: $color-bg-white-two;
+  border-radius: 3px;
+}
+
+
 
 // Estilos de Sara
 
