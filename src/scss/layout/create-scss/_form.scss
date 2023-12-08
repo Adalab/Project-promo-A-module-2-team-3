@@ -119,7 +119,9 @@ fieldset {
 }
 
 //DISEÑA
+//DISEÑA
 .collapsible {
+<<<<<<< HEAD
     &__fieldset {
         &--design {
             display: flex;
@@ -170,51 +172,99 @@ fieldset {
 
         //}
     //}
+=======
+  &__fieldset {
+      &--design {
+          display: flex;
+          align-items: center;;
+          gap: 18px;
+          padding: 27px 20px 22px 20px;
+      }
+      &--icon {
+          color: $color-dull-orange;
+          font-size: 18px;
+          align-self: center;
+      }
+      &--legend {
+          display: flex;
+          font-family: $font-main;
+          font-size: 18px;
+          color: $color-gunmetal;
+          font-weight: 600;
+      }
+      &--arrow-icon {
+          width: 18px;
+          height: 16px;
+          color: $color-gunmetal;
+      }
+  }
+  &__colours {
+      &--title {
+          font-family: $font-main;
+          font-size: 14px;
+          color: $color-gunmetal;
+          padding-left: 39px;
+          text-transform: uppercase;
+      }
+      &--position {
+          padding-left: 253px;
+      }
+  }
+  //&__palette {
+  //    display: flex;
+    //  &--radio {
+      //    align-self: center;
+        //  &--box {
+          //    width: 30px;
+            //  height: 25px;
+          //}
+      //}
+  //}
+>>>>>>> 16d5c14977c68309440a16fe147f29d77636106c
 }
 .collapsible__colours__palette {
-        display: flex;
-        padding-bottom: 20px;
-        justify-content: center;
+      display: flex;
+      padding-bottom: 20px;
+      justify-content: center;
 }
 .collapsible__colours__palette--radio {
-            align-self: center;
+          align-self: center;
 }
-.collapsible__colours__palette--box {           
-    width: 30px;
-    height: 25px;
-            }
+.collapsible__colours__palette--box {
+  width: 30px;
+  height: 25px;
+          }
 .bg-dark-green {
-    background-color: #114e4e;
-    margin-left: 10px;
-  }
+  background-color: #114E4E;
+  margin-left: 10px;
+}
 .bg-dirty-blue {
-    background-color: #438792;
-  }
+  background-color: #438792;
+}
 .bg-hospital-green {
-    background-color: #a2deaf;
-  }
+  background-color: #A2DEAF;
+}
 .bg-dried-blood {
-    background-color: #420101;
-    margin-left: 10px;
-  }
+  background-color: #420101;
+  margin-left: 10px;
+}
 .bg-rusty-red {
-    background-color: #bd1010;
-  }
+  background-color: #BD1010;
+}
 .bg-tomato {
-    background-color: #e95626;
-  }
+  background-color: #E95626;
+}
 .bg-slate {
-    background-color: #3e5b65;
-    margin-left: 10px;
-  }
+  background-color: #3E5B65;
+  margin-left: 10px;
+}
 .bg-faded-orange {
-    background-color: #eab052;
-  }
+  background-color: #EAB052;
+}
 .bg-light-grey-blue {
-    background-color: #a0c0cf;
-  }
- //SHARE
-
+  background-color: #A0C0CF;
+}
+//SHARE
 .collapsible {
     &__fieldset {
         &--share{
@@ -246,7 +296,7 @@ fieldset {
 display: flex;
 justify-content: center;
 padding-bottom: 30px;
- }
+}
 .share-container__button--styles {
     display: flex;
     background-color: $color-dull-orange;
@@ -271,10 +321,10 @@ padding-bottom: 30px;
     padding-right: 9px ;
 }
 .share-container__twitter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .share-container__twitter__tittle {
     font-family: $font-main;
@@ -292,9 +342,9 @@ padding-bottom: 30px;
     color: $color-dull-orange;
 }
 .share-container__twitter--ico-twitter {
-    color: $color-bg-white-two;
-    width: 18px;
-    height: 18px;
+  color: $color-bg-white-two;
+  width: 18px;
+  height: 18px;
 }
 .share-container__twitter__btn {
     width: 181px;
