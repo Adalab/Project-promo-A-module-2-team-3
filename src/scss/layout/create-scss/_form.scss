@@ -121,7 +121,6 @@ fieldset {
 //DISEÑA
 //DISEÑA
 .collapsible {
-<<<<<<< HEAD
     &__fieldset {
         &--design {
             display: flex;
@@ -159,6 +158,12 @@ fieldset {
         &--position {
             padding-left: 253px;
         }
+        &--hide {
+          display:none
+        }
+        &--show {
+          display:block
+        } 
     }
     //&__palette {
     //    display: flex;
@@ -172,55 +177,6 @@ fieldset {
 
         //}
     //}
-=======
-  &__fieldset {
-      &--design {
-          display: flex;
-          align-items: center;;
-          gap: 18px;
-          padding: 27px 20px 22px 20px;
-      }
-      &--icon {
-          color: $color-dull-orange;
-          font-size: 18px;
-          align-self: center;
-      }
-      &--legend {
-          display: flex;
-          font-family: $font-main;
-          font-size: 18px;
-          color: $color-gunmetal;
-          font-weight: 600;
-      }
-      &--arrow-icon {
-          width: 18px;
-          height: 16px;
-          color: $color-gunmetal;
-      }
-  }
-  &__colours {
-      &--title {
-          font-family: $font-main;
-          font-size: 14px;
-          color: $color-gunmetal;
-          padding-left: 39px;
-          text-transform: uppercase;
-      }
-      &--position {
-          padding-left: 253px;
-      }
-  }
-  //&__palette {
-  //    display: flex;
-    //  &--radio {
-      //    align-self: center;
-        //  &--box {
-          //    width: 30px;
-            //  height: 25px;
-          //}
-      //}
-  //}
->>>>>>> 16d5c14977c68309440a16fe147f29d77636106c
 }
 .collapsible__colours__palette {
       display: flex;
