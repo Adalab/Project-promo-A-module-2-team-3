@@ -1,1 +1,4 @@
-console.log('colapsables');
+"use strict";
+
+const collapsibleBtn = document.querySelectorAll(".js-collapsible--btn");
+
