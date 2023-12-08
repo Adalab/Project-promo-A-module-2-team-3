@@ -454,12 +454,12 @@
 
     }
 // COLORES PALETA 2
-
+.palette2 {
     h2 {
         color: $color-dried-blood;
     }  
 
-    .cardPreview {
+    //.cardPreview {
         .adalaberName {
             border-color: $color-dried-blood;
         }
@@ -484,16 +484,18 @@
                     color: $color-rusty-red;
                     border-color: $color-tomato;
                 }
-            }
+           // }
         }
+ }
 
 //COLORES PALETA 3
+.palette3 {
 
-h2 {
+    h2 {
     color: $color-slate;
-}  
+    }  
 
-.cardPreview {
+  .cardPreview {
     .adalaberName {
         border-color: $color-slate;
     }
@@ -520,3 +522,4 @@ h2 {
             }
         }
     }
+}
