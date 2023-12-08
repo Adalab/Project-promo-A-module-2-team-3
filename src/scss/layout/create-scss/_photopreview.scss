@@ -1,119 +1,522 @@
-    :root {
-        --montserrat: 'Montserrat', sans-serif;
-    }
-
     body{
-        font-family: var(--montserrat);
+        font-family: $font-cardtext;
 
         h2 {
             font-weight: bold;
-            color: #114e4e;
+            color: $color-dark-green-blue;
         }  
 
         h3 {
             font-weight: lighter;
-            color: #54585a;
+            color: $color-gunmetal;
         }
 
     }
 
+    @media only screen and (max-width: 480px) {
 
-
-
-    .photoPreview {
-        width: 100vw;
-        background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: center;
-    }
-
-    .resetBtn {
-        height: 30px;
-        width: 75px;
-        margin-top: 38px;
-        cursor: pointer;
-        border: 1px solid;
-        border-radius: 50px;
-        background-color: transparent;
-        border-color: white;
-        
-    }
-
-    .cardPreview {
-        background-color: white;
-        box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
-        position: relative;
-        margin-bottom: 40px;
-        margin-top: 20px;
-
-
-        .adalaberName {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding-left: 20px;
+        .photoPreview {
+            width: 100vw;
+            background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
             display: flex;
             flex-direction: column;
-            border-left: 5px solid;
-            border-color: #438792;
+            justify-content: left;
+            align-items: center;
+
+            .btn{
+                order: 1;
+                display: flex;
+                justify-content: left;
+                align-items: flex-start;
+
+                .resetBtn {
+                    height: 30px;
+                    width: 75px;
+                    margin-top: 38px;
+                    cursor: pointer;
+                    border: 1px solid;
+                    border-radius: 50px;
+                    background-color: transparent;
+                    border-color: $color-bg-main;
+                }
+            }
+    
+        
+            .cardPreview {
+                order: 2;
+                background-color: $color-bg-main;
+                box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+                position: relative;
+                height: 425px;
+                width: 250px;
+                margin-bottom: 40px;
+                margin-top: 20px;
+                
+        
+        
+                .adalaberName {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 5px solid;
+                    border-color: $color-dirty-blue;
+                }
+        
+                image {
+                    width: 400px;
+                    height: 400px;
+                }
+        
+                .icons {
+                    margin: 3rem 0;
+                    gap: 1rem;
+                    font-size: 1.25rem;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    
+                    .contactIcons{
+                        cursor: pointer;
+        
+                        .mobile {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+        
+                        .mailto {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+        
+                        .linkedin {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+                        .github {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+                    }
+                }
+            }
         }
+    
 
-        image {
-            width: 400px;
-            height: 400px;
-        }
+    }
 
-        .icons {
-            margin: 3rem 0;
-            gap: 1rem;
-            font-size: 1.25rem;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-            
-            .contactIcons{
-                cursor: pointer;
+    @media only screen and (min-width: 481px) and (max-width: 768px){
 
-                .mobile {
-                    width: 32px;
-                    height: 32px;
-                    margin: 0 10px 0 0;
-                    padding: 7px 10px;
-                    border-radius: 50%;
-                    border: solid 2px;
-                    border-color: #a2deaf;
+        .photoPreview {
+            width: 100vw;
+            background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+
+            .btn{
+                order: 1;
+                .resetBtn {
+                    height: 30px;
+                    width: 75px;
+                    margin-top: 38px;
+                    cursor: pointer;
+                    border: 1px solid;
+                    border-radius: 50px;
+                    background-color: transparent;
+                    border-color: $color-bg-main;
                 }
+            }
+    
+            .cardPreview {
+                background-color: $color-bg-main;
+                box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+                position: relative;
+                margin-bottom: 40px;
+                margin-top: 20px;
+                top: 20%;
+                order: 2;
 
-                .mailto {
-                    width: 32px;
-                    height: 32px;
-                    margin: 0 10px 0 0;
-                    padding: 7px 10px;
-                    border-radius: 50%;
-                    border: solid 2px;
-                    border-color: #a2deaf;
+        
+        
+                .adalaberName {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 5px solid;
+                    border-color: $color-dark-green-blue;
                 }
-
-                .linkedin {
-                    width: 32px;
-                    height: 32px;
-                    margin: 0 10px 0 0;
-                    padding: 7px 10px;
-                    border-radius: 50%;
-                    border: solid 2px;
-                    border-color: #a2deaf;
+        
+                image {
+                    width: 450px;
+                    height: 400px;
                 }
-                .github {
-                    width: 32px;
-                    height: 32px;
-                    margin: 0 10px 0 0;
-                    padding: 7px 10px;
-                    border-radius: 50%;
-                    border: solid 2px;
-                    border-color: #a2deaf;
+        
+                .icons {
+                    margin: 3rem 0;
+                    gap: 1rem;
+                    font-size: 1.25rem;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    
+                    .contactIcons{
+                        cursor: pointer;
+        
+                        .mobile {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+        
+                        .mailto {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+        
+                        .linkedin {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+                        .github {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+                    }
                 }
             }
         }
     }
 
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+        .photoPreview {
+            width: 100vw;
+            background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+        }
+    
+        .btn{
+            order: 1;
+            .resetBtn {
+                height: 30px;
+                width: 75px;
+                margin-top: 38px;
+                cursor: pointer;
+                border: 1px solid;
+                border-radius: 50px;
+                background-color: transparent;
+                border-color: $color-bg-main;
+            }
+        }
+    
+        .cardPreview {
+            background-color: $color-bg-main;
+            box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+            position: relative;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            top: 20%;
+            order: 2;
+    
+    
+            .adalaberName {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                border-left: 5px solid;
+                border-color: $color-dark-green-blue;
+            }
+    
+            image {
+                width: 400px;
+                height: 400px;
+            }
+    
+            .icons {
+                margin: 3rem 0;
+                gap: 1rem;
+                font-size: 1.25rem;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                
+                .contactIcons{
+                    cursor: pointer;
+    
+                    .mobile {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        border-color: $color-input-form;
+                        color: #114e4e;
+                    }
+    
+                    .mailto {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        border-color: $color-input-form;
+                        color: #114e4e;
+                    }
+    
+                    .linkedin {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        border-color: $color-input-form;
+                        color: #114e4e;
+                    }
+                    .github {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        border-color: $color-input-form;
+                        color: #114e4e;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1025px) {
+
+        .photoPreview {
+            width: 100vw;
+            background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+        }
+        .btn{
+            .resetBtn {
+                height: 30px;
+                width: 75px;
+                margin-top: 38px;
+                cursor: pointer;
+                border: 1px solid;
+                border-radius: 50px;
+                background-color: transparent;
+                border-color: $color-bg-main;
+            }
+        }
+
+        
+        .cardPreview {
+            background-color: $color-bg-main;
+            box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+            position: relative;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            top: 20%;
+    
+    
+            .adalaberName {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                border-left: 5px solid;
+                border-color: $color-dark-green-blue;
+            }
+    
+            image {
+                width: 400px;
+                height: 400px;
+            }
+    
+            .icons {
+                margin: 3rem 0;
+                gap: 1rem;
+                font-size: 1.25rem;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                
+                .contactIcons{
+                    cursor: pointer;
+    
+                    .mobile {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        border-color: $color-input-form;
+                        color: #114e4e;
+                    }
+    
+                    .mailto {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        border-color: $color-input-form;
+                        color: #114e4e;
+                    }
+    
+                    .linkedin {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        border-color: $color-input-form;
+                        color: #114e4e;
+                    }
+                    .github {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        border-color: $color-input-form;
+                        color: #114e4e;
+                    }
+                }
+            }
+        }
+
+    }
+// COLORES PALETA 2
+
+    h2 {
+        color: $color-dried-blood;
+    }  
+
+    .cardPreview {
+        .adalaberName {
+            border-color: $color-dried-blood;
+        }
+
+            .contactIcons{
+
+                .mobile {
+                    color: $color-rusty-red;
+                    border-color: $color-tomato;
+                }
+
+                .mailto {
+                    color: $color-rusty-red;
+                    border-color: $color-tomato;
+                }
+
+                .linkedin {
+                    color: $color-rusty-red;
+                    border-color: $color-tomato;
+                }
+                .github {
+                    color: $color-rusty-red;
+                    border-color: $color-tomato;
+                }
+            }
+        }
+
+//COLORES PALETA 3
+
+h2 {
+    color: $color-slate;
+}  
+
+.cardPreview {
+    .adalaberName {
+        border-color: $color-slate;
+    }
+
+        .contactIcons{
+
+            .mobile {
+                color: $color-faded-orange;
+                border-color: $color-light-grey-blue;
+            }
+
+            .mailto {
+                color: $color-faded-orange;
+                border-color: $color-light-grey-blue;
+            }
+
+            .linkedin {
+                color: $color-faded-orange;
+                border-color: $color-light-grey-blue;
+            }
+            .github {
+                color: $color-rusty-red;
+                border-color: $color-light-grey-blue;
+            }
+        }
+    }
