@@ -1,120 +1,123 @@
+// Estilos del formulario general
+
 form {
-    background-color: $color-bg-white-two;
-  }
-  hr {
-    width: 90%;
-    margin: 10px auto;
-  }
-  fieldset {
-    border: none;
-  }
-  .fieldset__fillout {
-    padding-bottom: 20px;
-  }
-  .title__section {
+  background-color: $color-bg-white-two;
+}
+hr {
+  width: 90%;
+  margin: 10px auto;
+}
+fieldset {
+  border: none;
+}
+.fieldset__fillout {
+  padding-bottom: 20px;
+}
+.title__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 0px 20px;
+
+  &--box1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 18px;
-    padding: 0px 20px;
-  
-    &--box1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-  
-      &--icon {
-        color: $color-dull-orange;
-        width: 21px;
-        height: 18px;
-      }
-  
-      &--legend {
-        font-family: $font-main;
-        font-size: 18px;
-        color: $color-gunmetal;
-      }
+    justify-content: center;
+    gap: 10px;
+
+    &--icon {
+      color: $color-dull-orange;
+      width: 21px;
+      height: 18px;
     }
-  
-    &--icon2 {
-      width: 18px;
-      height: 16px;
+
+    &--legend {
+      font-family: $font-main;
+      font-size: 18px;
       color: $color-gunmetal;
     }
   }
-  
-  .section__div1 {
-    display: flex;
-    flex-direction: column;
-    color: $color-dark-green-blue;
-    font-size: 14px;
-    padding: 0px 20px;
-    // margin: 15px 20px 15px 20px;
-  
-    &--label {
-      margin-top: 15px;
-      margin-bottom: 10px;
-    }
-  
-    &--input {
-      border: solid 1px $color-input-form;
-      height: 30px;
-    }
+
+  &--icon2 {
+    width: 18px;
+    height: 16px;
+    color: $color-gunmetal;
   }
-  .section__divImg {
+}
+
+.section__div1 {
+  display: flex;
+  flex-direction: column;
+  color: $color-dark-green-blue;
+  font-size: 14px;
+  padding: 0px 20px;
+  // margin: 15px 20px 15px 20px;
+
+  &--label {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  &--input {
+    border: solid 1px $color-input-form;
+    height: 30px;
+  }
+}
+.section__divImg {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &--addImg {
+    background-color: $color-dull-orange;
+    color: $color-bg-white-two;
+    width: 140px;
+    height: 30px;
+    border-radius: 3px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-  
-    &--addImg {
-      background-color: $color-dull-orange;
-      color: $color-bg-white-two;
-      width: 140px;
-      height: 30px;
-      border-radius: 3px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &--square {
-      border: solid 1px $color-input-form;
-      height: 30px;
-      width: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  }
+  &--square {
+    border: solid 1px $color-input-form;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1280px) {
+  .section__form {
+    display: flex;
+    flex-direction: row-reverse;
+    // flex-grow:
+    padding: 20px;
+
+    &--box {
+      width: 100vw;
     }
   }
-  
-  // Tablet
-  @media (min-width: 768px) and (max-width: 1280px) {
-    .section__form {
-      display: flex;
-      flex-direction: row-reverse;
-      // flex-grow:
-      padding: 20px;
-  
-      &--box {
-        width: 100vw;
-      }
+}
+
+//Desktop
+
+@media (min-width: 1280px) {
+  .section__form {
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding: 20px;
+
+    &--box {
+      width: 100vw;
     }
   }
-  
-  //Desktop
-  
-  @media (min-width: 1280px) {
-    .section__form {
-      display: flex;
-      flex-direction: row-reverse;
-      // flex-grow:
-      padding: 20px;
-  
-      &--box {
-        width: 100vw;
-        }   
-    }
-  }
+}
+
 //DISEÑA
 .collapsible {
     &__fieldset {
@@ -152,7 +155,7 @@ form {
             text-transform: uppercase;
         }
         &--position {
-            padding-left: 183px;
+            padding-left: 253px;
         }
     }
     //&__palette {
@@ -218,7 +221,7 @@ form {
             display: flex;
             align-items: center;;
             gap: 18px;
-            padding: 27px 0px 22px 20px;
+            padding: 27px 0px 0px 20px;
           
         }
         &--icon {
@@ -255,6 +258,8 @@ padding-bottom: 30px;
     font-size: 18px;
     color: $color-bg-white-two;
     border: none;
+    font-weight: 600;
+    margin-top: 30px;
 }
 .share-container__button--icon-card {
     display: flex;
@@ -277,6 +282,7 @@ padding-bottom: 30px;
     font-weight: 600;
     text-align: center;
     color: $color-gunmetal;
+    margin-top: 20px;
 }
 .share-container__twitter--link {
     font-family: $font-main;
@@ -293,7 +299,7 @@ padding-bottom: 30px;
 .share-container__twitter__btn {
     width: 181px;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 30px;
     padding-top: 5px;
     border: 0;
@@ -301,6 +307,14 @@ padding-bottom: 30px;
     background-color: #00a0f5;
     font-family: $font-main;
     color: $color-bg-white-two;
+    text-decoration: none;
   }
 
+  .line {
+    border-top: 1px solid #d8d8d8;
+    height: 1px;
+    width: 365px;
+    padding: 0;
+    margin: 7px auto 0 auto;
+  }
   //mediaquerys
