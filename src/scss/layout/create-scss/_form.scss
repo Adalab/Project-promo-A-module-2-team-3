@@ -119,177 +119,196 @@ fieldset {
 }
 
 //DISEÑA
+//DISEÑA
 .collapsible {
-    &__fieldset {
-        &--design {
-            display: flex;
-            align-items: center;;
-            gap: 18px;
-            padding: 27px 0px 22px 20px;
-          
-        }
-        &--icon {
-            color: $color-dull-orange;
-            font-size: 18px;
-            align-self: center;
-        }
-        &--legend {
-            font-family: $font-main;
-            font-size: 18px;
-            color: $color-gunmetal
-        }
-        &--arrow-icon {
-            width: 18px;
-            height: 16px;
-            color: $color-gunmetal;
-        }
-    }
-    &__colours {
-        &--title {
-            font-family: $font-main;
-            font-size: 14px;
-            color: $color-gunmetal;
-            padding-left: 39px;
-            text-transform: uppercase;
-        }
-        &--position {
-            padding-left: 183px;
-        }
-    }
-    //&__palette {
-    //    display: flex;
-
-      //  &--radio {
-        //    align-self: center;
-          //  &--box {
-            //    width: 30px;
-              //  height: 25px;
-            //}
-
-        //}
-    //}
+  &__fieldset {
+      &--design {
+          display: flex;
+          align-items: center;;
+          gap: 18px;
+          padding: 27px 20px 22px 20px;
+      }
+      &--icon {
+          color: $color-dull-orange;
+          font-size: 18px;
+          align-self: center;
+      }
+      &--legend {
+          display: flex;
+          font-family: $font-main;
+          font-size: 18px;
+          color: $color-gunmetal;
+          font-weight: 600;
+      }
+      &--arrow-icon {
+          width: 18px;
+          height: 16px;
+          color: $color-gunmetal;
+      }
+  }
+  &__colours {
+      &--title {
+          font-family: $font-main;
+          font-size: 14px;
+          color: $color-gunmetal;
+          padding-left: 39px;
+          text-transform: uppercase;
+      }
+      &--position {
+          padding-left: 253px;
+      }
+  }
+  //&__palette {
+  //    display: flex;
+    //  &--radio {
+      //    align-self: center;
+        //  &--box {
+          //    width: 30px;
+            //  height: 25px;
+          //}
+      //}
+  //}
 }
 .collapsible__colours__palette {
-        display: flex;
-        padding-bottom: 20px;
-        justify-content: center;
+      display: flex;
+      padding-bottom: 20px;
+      justify-content: center;
 }
 .collapsible__colours__palette--radio {
-            align-self: center;
+          align-self: center;
 }
-.collapsible__colours__palette--box {           
-    width: 30px;
-    height: 25px;
-            }
+.collapsible__colours__palette--box {
+  width: 30px;
+  height: 25px;
+          }
 .bg-dark-green {
-    background-color: #114e4e;
-    margin-left: 10px;
-  }
+  background-color: #114E4E;
+  margin-left: 10px;
+}
 .bg-dirty-blue {
-    background-color: #438792;
-  }
+  background-color: #438792;
+}
 .bg-hospital-green {
-    background-color: #a2deaf;
-  }
+  background-color: #A2DEAF;
+}
 .bg-dried-blood {
-    background-color: #420101;
-    margin-left: 10px;
-  }
+  background-color: #420101;
+  margin-left: 10px;
+}
 .bg-rusty-red {
-    background-color: #bd1010;
-  }
+  background-color: #BD1010;
+}
 .bg-tomato {
-    background-color: #e95626;
-  }
+  background-color: #E95626;
+}
 .bg-slate {
-    background-color: #3e5b65;
-    margin-left: 10px;
-  }
+  background-color: #3E5B65;
+  margin-left: 10px;
+}
 .bg-faded-orange {
-    background-color: #eab052;
-  }
+  background-color: #EAB052;
+}
 .bg-light-grey-blue {
-    background-color: #a0c0cf;
-  }
- //SHARE
-
+  background-color: #A0C0CF;
+}
+//SHARE
 .collapsible {
-    &__fieldset {
-        &--share{
-            display: flex;
-            align-items: center;;
-            gap: 18px;
-            padding: 27px 0px 22px 20px;
-          
-        }
-        &--icon {
-            color: $color-dull-orange;
-            font-size: 18px;
-            align-self: center;
-        }
-        &--legend {
-            font-family: $font-main;
-            font-size: 18px;
-            color: $color-gunmetal
-        }
-        &--arrow-icon {
-            width: 18px;
-            height: 16px;
-            color: $color-gunmetal;
-        }
-    }
- }
+  &__fieldset {
+      &--share{
+          display: flex;
+          align-items: center;;
+          gap: 18px;
+          padding: 27px 0px 0px 20px;
+      }
+      &--icon {
+          color: $color-dull-orange;
+          font-size: 18px;
+          align-self: center;
+      }
+      &--legend {
+          font-family: $font-main;
+          font-size: 18px;
+          color: $color-gunmetal;
+          font-weight: 600;
+      }
+      &--arrow-icon {
+          width: 18px;
+          height: 16px;
+          color: $color-gunmetal;
+      }
+  }
+}
 .share-container__button{
 display: flex;
 justify-content: center;
 padding-bottom: 30px;
- }
+}
 .share-container__button--styles {
-    display: flex;
-    background-color: $color-dull-orange;
-    width: 199px;
-    height: 50px;
-    padding: 13px 18px 13px 18px;
-    border-radius: 12px;
-    font-family: $font-main;
-    font-size: 18px;
-    color: $color-bg-white-two;
-    border: none;
+  display: flex;
+  background-color: $color-dull-orange;
+  width: 199px;
+  height: 50px;
+  padding: 13px 18px 13px 18px;
+  border-radius: 12px;
+  font-family: $font-main;
+  font-size: 18px;
+  color: $color-bg-white-two;
+  border: none;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.share-container__button--icon-card {
+  display: flex;
+  justify-content: center;
+  color: $color-bg-white-two;
+  width: 25px;
+  height: 22px;
+  align-items: center;
+  padding-right: 9px ;
 }
 .share-container__twitter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .share-container__twitter__tittle {
-    font-family: $font-main;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    color: $color-gunmetal;
+  font-family: $font-main;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: $color-gunmetal;
+  margin-top: 20px;
 }
 .share-container__twitter--link {
-    font-family: $font-main;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center;
-    color: $color-dull-orange
+  font-family: $font-main;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: $color-dull-orange;
 }
 .share-container__twitter--ico-twitter {
-    color: $color-bg-white-two;
-    width: 18px;
-    height: 18px;
+  color: $color-bg-white-two;
+  width: 18px;
+  height: 18px;
 }
 .share-container__twitter__btn {
-    width: 181px;
-    height: 30px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding-top: 5px;
-    border: 0;
-    border-radius: 3px;
-    background-color: #00a0f5;
-    font-family: $font-main;
-    color: $color-bg-white-two;
-  }
+  width: 181px;
+  height: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 5px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #00A0F5;
+  font-family: $font-main;
+  color: $color-bg-white-two;
+  text-decoration: none;
+}
+.line {
+  border-top: 1px solid #D8D8D8;
+  height: 1px;
+  width: 365px;
+  padding: 0;
+  margin: 7px auto 0 auto;
+}
