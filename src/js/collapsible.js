@@ -7,6 +7,19 @@ for (const item of collapsibleBtn) {
 }
 function updateCollapsible(ev) {
     const currentCollapsible = ev.currentTarget;
+
+    // Cierra todos los fieldset
+    const allFieldSets = document.querySelectorAll('.collapsible__fieldset');
+    for( const eachFieldSet of allFieldSets ) {
+        eachFieldSet.classList.remove('collapsible__colours--show');
+        eachFieldSet.classList.add('collapsible__colours--hide');
+    }
+
+    //currentCollapsible.closest('fieldset')
+
+    currentCollapsible.parentElement.classList.add('collapsible__colours--show');
+
+/*
     if(currentCollapsible.children[2].classList.contains('fa-chevron-up')){
         currentCollapsible.children[2].classList.remove('fa-chevron-up');
         currentCollapsible.children[2].classList.add('fa-chevron-down');
@@ -19,6 +32,7 @@ function updateCollapsible(ev) {
         currentCollapsible.nextElementSibling.classList.remove('collapsible__colours--show');
         currentCollapsible.nextElementSibling.classList.add('collapsible__colours--hide');
     }
+    */
 }
 /*const collapsibleFill = document.querySelectorAll(".js-collapsible--fill");
 

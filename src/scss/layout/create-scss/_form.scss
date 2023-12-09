@@ -163,12 +163,7 @@ fieldset {
         &--position {
             padding-left: 253px;
         }
-        &--hide {
-          display:none
-        }
-        &--show {
-          display:block
-        } 
+       
     }
     //&__palette {
     //    display: flex;
@@ -346,3 +341,16 @@ padding-bottom: 30px;
       padding-left: 305px;
      }
   }*/
+
+
+  .collapsible__colours--hide {
+    .collapsible__colours {
+      display: none;
+    }
+    .collapsible__fieldset--arrow-icon1 {
+      transform: rotate(180deg);
+    }
+  }
+  .collapsible__colours--show .collapsible__colours {
+    display: flex;
+  }
