@@ -1,4 +1,6 @@
 .page__footer {
+  width: 100vw;
+  border-top: solid #d8d8d8;
 
   // width: 20rem;
   // height: 6.8rem;
@@ -27,6 +29,7 @@
     justify-content:space-between;
     align-items: center;
     margin-top: 1rem;
+    width: 100vw;
     
     &--text {
       margin-left: 3rem;
