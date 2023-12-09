@@ -1,12 +1,9 @@
 // Estilos del formulario general
 
-form {
+body {
   background-color: $color-bg-white-two;
 }
-hr {
-  width: 90%;
-  margin: 10px auto;
-}
+
 fieldset {
   border: none;
 }
@@ -127,7 +124,9 @@ fieldset {
             display: flex;
             align-items: center;;
             gap: 18px;
-            padding: 27px 20px 22px 20px;
+            padding: 22px 0px 22px 20px;
+            flex-direction: row;
+            justify-content: space-between;
           
         }
         &--icon {
@@ -153,6 +152,7 @@ fieldset {
         }
     }
     &__colours {
+      flex-direction: column;
         &--title {
             font-family: $font-main;
             font-size: 14px;
@@ -161,7 +161,7 @@ fieldset {
             text-transform: uppercase;
         }
         &--position {
-            padding-left: 253px;
+            padding-left: 210px;
         }
        
     }
@@ -227,7 +227,7 @@ fieldset {
             display: flex;
             align-items: center;;
             gap: 18px;
-            padding: 27px 0px 0px 20px;
+            padding: 22px 0px 22px 20px;
           
         }
         &--icon {
