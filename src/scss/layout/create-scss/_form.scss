@@ -147,6 +147,9 @@ fieldset {
             height: 16px;
             color: $color-gunmetal;
             padding-left: 232px;
+            display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
         }
     }
     &__colours {
@@ -248,6 +251,9 @@ fieldset {
             height: 16px;
             color: $color-gunmetal;
             padding-left: 195px;
+            display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
         }
     }
  }

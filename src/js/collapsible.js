@@ -20,9 +20,7 @@ function updateCollapsible(ev) {
         currentCollapsible.nextElementSibling.classList.add('collapsible__colours--hide');
     }
 }
-
-/*
-const collapsibleFill = document.querySelector[0](".js-collapsible--fill");
+/*const collapsibleFill = document.querySelectorAll(".js-collapsible--fill");
 
 for (const item of collapsibleFill) {
     item.addEventListener("click", updateCollapsible);
@@ -41,7 +39,4 @@ function updateCollapsible(ev) {
         currentCollapsible.nextElementSibling.classList.remove('collapsible__colours--show');
         currentCollapsible.nextElementSibling.classList.add('collapsible__colours--hide');
     }
-}
-*/
-
-   
+}*/
