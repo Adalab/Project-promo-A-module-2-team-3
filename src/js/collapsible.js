@@ -19,11 +19,29 @@ function updateCollapsible(ev) {
         currentCollapsible.nextElementSibling.classList.remove('collapsible__colours--show');
         currentCollapsible.nextElementSibling.classList.add('collapsible__colours--hide');
     }
-
-    /*if (currentCollapsible.classList.contains("collapsable--open")) {
-      currentCollapsible.classList.remove("collapsable--open");
-    } else {
-      currentCollapsible.classList.add("collapsable--open");
-    }*/
 }
 
+/*
+const collapsibleFill = document.querySelector[0](".js-collapsible--fill");
+
+for (const item of collapsibleFill) {
+    item.addEventListener("click", updateCollapsible);
+}
+function updateCollapsible(ev) {
+    const currentCollapsible = ev.currentTarget;
+    if(currentCollapsible.children[1].classList.contains('fa-chevron-up')){
+        currentCollapsible.children[1].classList.remove('fa-chevron-up');
+        currentCollapsible.children[1].classList.add('fa-chevron-down');
+        currentCollapsible.nextElementSibling.classList.remove('collapsible__colours--hide');
+        currentCollapsible.nextElementSibling.classList.add('collapsible__colours--show');
+    }
+    else{
+        currentCollapsible.children[1].classList.remove('fa-chevron-down');
+        currentCollapsible.children[1].classList.add('fa-chevron-up');
+        currentCollapsible.nextElementSibling.classList.remove('collapsible__colours--show');
+        currentCollapsible.nextElementSibling.classList.add('collapsible__colours--hide');
+    }
+}
+*/
+
+   

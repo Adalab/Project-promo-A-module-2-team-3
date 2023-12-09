@@ -36,6 +36,7 @@ fieldset {
       font-family: $font-main;
       font-size: 18px;
       color: $color-gunmetal;
+      font-weight: 600;
     }
   }
 
@@ -141,10 +142,11 @@ fieldset {
             color: $color-gunmetal;
             font-weight: 600;
         }
-        &--arrow-icon {
+        &--arrow-icon1 {
             width: 18px;
             height: 16px;
             color: $color-gunmetal;
+            padding-left: 232px;
         }
     }
     &__colours {
@@ -241,10 +243,11 @@ fieldset {
             color: $color-gunmetal;
             font-weight: 600;
         }
-        &--arrow-icon {
+        &--arrow-icon2 {
             width: 18px;
             height: 16px;
             color: $color-gunmetal;
+            padding-left: 195px;
         }
     }
  }
@@ -324,3 +327,16 @@ padding-bottom: 30px;
     margin: 7px auto 0 auto;
   }
   //mediaquerys
+  /*@media (min-width: 768px) and (max-width: 1280px) {
+   .collapsible__fieldset--arrow-icon1 {
+    padding-left: 325px;
+   }
+  }
+  
+  //Desktop
+  
+  @media (min-width: 1280px) {
+    .collapsible__fieldset--arrow-icon1 {
+      padding-left: 305px;
+     }
+  }*/
