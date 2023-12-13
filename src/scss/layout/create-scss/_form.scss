@@ -303,6 +303,11 @@ padding-bottom: 30px;
   justify-content: center;
   align-items: center;
 }
+
+.hidden {
+  display: none;
+}
+
 .share-container__twitter__tittle {
     font-family: $font-main;
     font-size: 18px;

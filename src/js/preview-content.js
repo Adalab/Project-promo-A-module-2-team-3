@@ -1,37 +1,53 @@
+'use strict'; 
+
 console.log('preview-content');
 
 const createButton = document.querySelector('.js__createButton');
+const shareButtom = document.querySelector('.js_createCard');
 
-const noClickedButton = document.querySelector('.share-container__button--styles');
-const clickedButton = document.querySelector('.share-container__button--styles--grey');
+//creo el boton - funcion
 
-const createCard = document.querySelector('.js_createCard');
+function togglecreateCard () {
 
-
-//para cambiar el color del boton
-clickedButton.addEventListener('clicked' , (event) => {
-    // event.preventDefault();
-
-    createCard.classList.remove('share-container__button--styles--grey' , 'share-container__button--styles');
-    previewCard.classList.add('share-container__button--styles--grey');
-});
-
-noClickedButton.addEventListener( 'click' , (event) => {
-    // event.preventDefault();
-
-    createCard.classList.remove('share-container__button--styles--grey' , 'share-container__button--styles');
-    previewCard.classList.add('share-container__button--styles');
-});
-
-//para que se extienda el mensaje "La tarjeta ha sido creada"
-function togglecreateCard() {
-    createCard.classList.toggle('hidden');
-    console.log('funciona')
+    shareButtom.classList.toggle('hidden');
 };
 
-createButton.addEventListener( 'click' , (event) => {
+function handelCllickButtom (event) {
     event.preventDefault();
-    createButton.classList.toggle('clicked');
-    togglecreateCard
- console.log('funciona')
-});
+
+    createButton.classList.toggle('click');
+    togglecreateCard();
+};
+
+
+createButton.addEventListener( 'click' , handelCllickButtom);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //para cambiar el color del boton
+// clickedButton.addEventListener( 'click' , (event) => {
+//     event.preventDefault();
+
+//     createCard.classList.remove('js_shareGrey' , 'js_shareOrange');
+//     previewCard.classList.add('js_shareOrange');
+//     // console.log('funciona');
+// });
+
+// // noClickedButton.addEventListener( 'click' , (event) => {
+// //     event.preventDefault();
+
+// //     createCard.classList.remove('js_shareGrey' , 'js_shareOrange');
+// //     previewCard.classList.add('js_shareGrey');
+// //     console.log('funciona');
+// // });
