@@ -21,3 +21,4 @@ import './preview-content.js';
 import './preview-palettes.js';
 import './reset-button.js';
 import './share.js';
+import './get-avatar.js';

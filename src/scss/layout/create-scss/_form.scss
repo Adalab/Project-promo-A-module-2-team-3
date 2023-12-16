@@ -77,6 +77,12 @@ fieldset {
     justify-content: center;
     align-items: center;
   }
+
+  .gosh_btn {
+    display: none;
+  }
+
+
   &--square {
     border: solid 1px $color-input-form;
     height: 30px;
@@ -84,6 +90,10 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 

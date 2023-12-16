@@ -13,6 +13,16 @@
 
     }
 
+    .image {
+        width: 250px;
+        height: 250px;
+        background-image: url('../images/test.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
     @media only screen and (max-width: 480px) {
 
         .photoPreview {
@@ -64,10 +74,14 @@
                     border-color: $color-dirty-blue;
                 }
         
-                image {
-                    width: 400px;
-                    height: 400px;
-                }
+                // .image {
+                //     width: 400px;
+                //     height: 400px;
+                //     background-image: url('../../../../public/images/test.jpeg');
+                //     background-size: cover;
+                //     background-position: center;
+                //     background-repeat: no-repeat;
+                // }
         
                 .icons {
                     margin: 3rem 0;
