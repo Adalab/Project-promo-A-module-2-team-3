@@ -1,5 +1,5 @@
 .page__header {
-  // width: 20rem;
+  width: 100vw;
   height: 12rem;
   background-color: $color-bg-white-four;
 }
@@ -33,7 +33,7 @@ height: 2.5rem;
 @media all and (min-width: 768px) {
   
   .page__header {
-    // width: 48rem;
+    width: 48rem;
     height: 29.6rem;
     background-color: $color-bg-white-four;
   }
@@ -43,8 +43,8 @@ height: 2.5rem;
     justify-content:center;
     
     &--img {
-      width: 26rem;
-      height: 6.5rem;
+      width: 100vw;
+      height: 20vh;
       margin: 20rem 10.8rem 1.5rem 10.8rem;
     }
   }

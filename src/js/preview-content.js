@@ -1,7 +1,7 @@
 'use strict'; 
 
 console.log('preview-content');
-
+//variables para el desplejable de crear tarjeta
 const createButton = document.querySelector('.js__createButton');
 const shareButtom = document.querySelector('.js_createCard');
 
@@ -23,31 +23,13 @@ function handelCllickButtom (event) {
 createButton.addEventListener( 'click' , handelCllickButtom);
 
 
+//variables para el cambio de color del botón
+const shareCard = document.querySelector('.js__btnColor');
 
 
+shareCard.addEventListener( 'click' , (event) => {
+    event.preventDefault();
 
-
-
-
-
-
-
-
-
-
-// //para cambiar el color del boton
-// clickedButton.addEventListener( 'click' , (event) => {
-//     event.preventDefault();
-
-//     createCard.classList.remove('js_shareGrey' , 'js_shareOrange');
-//     previewCard.classList.add('js_shareOrange');
-//     // console.log('funciona');
-// });
-
-// // noClickedButton.addEventListener( 'click' , (event) => {
-// //     event.preventDefault();
-
-// //     createCard.classList.remove('js_shareGrey' , 'js_shareOrange');
-// //     previewCard.classList.add('js_shareGrey');
-// //     console.log('funciona');
-// // });
+    shareCard.classList.remove( 'share-container__button--styles' );
+    shareCard.classList.add('share-container__button--styles--grey');
+});

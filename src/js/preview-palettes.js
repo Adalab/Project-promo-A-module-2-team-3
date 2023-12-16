@@ -1,6 +1,6 @@
 console.log('preview-palletes');
 
-const previewCard = document.querySelector('.js__previewcard')
+const previewCard = document.querySelector('.js__previewcard');
 
 const palette1 = document.querySelector('.js-palette1');
 const palette2 = document.querySelector('.js-palette2');
