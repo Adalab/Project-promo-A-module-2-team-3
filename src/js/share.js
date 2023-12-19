@@ -35,10 +35,11 @@ phoneInput.addEventListener("input", (event) => {
 
 linkedinInput.addEventListener("input", (event) => {
   data.linkedin = event.currentTarget.value;
-  previewLinkedin.href = data.linkedin;
+  previewLinkedin.href = `https://www.linkedin.com/in/${data.linkedin}/`;
+  console.log(previewLinkedin.href);
 });
 
 githubInput.addEventListener("input", (event) => {
   data.github = event.currentTarget.value;
-  previewGithub.href = data.github;
+  previewGithub.href = `https://github.com/${data.github}`;
 });
