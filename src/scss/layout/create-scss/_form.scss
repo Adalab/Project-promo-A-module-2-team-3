@@ -326,22 +326,23 @@ fieldset {
   font-weight: 600;
   text-align: center;
   color: $color-dull-orange;
+  padding-top: 10px;
 }
 .share-container__twitter--ico-twitter {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: baseline;
   color: $color-bg-white-two;
-  width: 18px;
-  height: 18px;
-}
-.share-container__twitter__btn {
   width: 181px;
   height: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
   padding-top: 5px;
-  border: 0;
   border-radius: 3px;
   background-color: #00a0f5;
   font-family: $font-main;
+  font-size: 14px;
   color: $color-bg-white-two;
   text-decoration: none;
 }
