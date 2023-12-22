@@ -5,7 +5,7 @@
 
 .body {
   background-color: $color-bg-white-four;
-  
+
   &__fttitle {
     font-family: $font-landing;
     color: $color-dull-orange;
@@ -14,15 +14,17 @@
     margin: 0rem 0rem 0.5rem 0rem;
 
     &--content {
-    font-family: $font-main;
-    color: $color-dark-green-blue;
-    font-size: 0.9rem;
-    text-align: center;
-    margin: 0rem 1.7rem 2rem 1.7rem;
+      font-family: $font-main;
+      color: $color-dark-green-blue;
+      font-size: 0.9rem;
+      text-align: center;
+      margin: 0rem 1.7rem 2rem 1.7rem;
     }
-
   }
-
+  .shorcut_container {
+    display: flex;
+    justify-content: center;
+  }
   .shortcut {
     margin: 0rem 1.6rem 0rem 1.6rem;
     border: solid 1.6px $color-dull-orange;
@@ -35,9 +37,8 @@
     font-family: $font-main;
     color: $color-gunmetal;
     font-size: 0.8rem;
-    
-    &__desing {
 
+    &__desing {
       width: 3.7rem;
       height: 3rem;
       margin: 1.3rem 0rem 0.6rem 0rem;
@@ -52,7 +53,7 @@
         text-align: center;
         margin-top: 0.1rem;
       }
-      }
+    }
 
     &__fullout {
       width: 3.7rem;
@@ -65,7 +66,7 @@
         color: $color-dull-orange;
       }
 
-      &--textfullout{
+      &--textfullout {
         text-align: center;
         margin-top: 0.1rem;
       }
@@ -87,87 +88,76 @@
         margin-top: 1.8rem;
       }
     }
-
   }
-  
+
   .box__button {
     display: flex;
     justify-content: center;
     margin-top: 15rem;
-    
-    .box__button__start {
-    background-color: $color-dirty-blue;
-    width: 8rem;
-    height: 2.6rem;
-    border-radius: 2rem;
-    margin: 0rem 0rem 4.8rem 0rem;
-    border-style: none;
-    font-family: $font-main;
-    font-weight: 600; //me parece muy bold
-    
-    .gosht__link {
-      text-decoration: none;
-      color: $color-bg-white-two;
-    }
-    
-   }
-  }
 
+    .box__button__start {
+      background-color: $color-dirty-blue;
+      width: 8rem;
+      height: 2.6rem;
+      border-radius: 2rem;
+      margin: 0rem 0rem 4.8rem 0rem;
+      border-style: none;
+      font-family: $font-main;
+      font-weight: 600; //me parece muy bold
+
+      .gosht__link {
+        text-decoration: none;
+        color: $color-bg-white-two;
+      }
+    }
+  }
 }
 
-@media all and (min-width: 768px) { 
-
+@media all and (min-width: 768px) {
   .body {
-
     &__fttitle {
-    font-size: 2rem;
-    text-align: center;
-    margin: 0rem 0rem 0.5rem 0rem;
-    
-    &--content {
-    width: 100vw;
-    font-size: 1.4rem;
-    text-align: center;
-    margin: 0rem 0rem 2rem 0rem;
-    padding: 0rem 10rem 0rem 10rem;
-     }
+      font-size: 2rem;
+      text-align: center;
+      margin: 0rem 0rem 0.5rem 0rem;
+
+      &--content {
+        width: 100vw;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 0rem 0rem 2rem 0rem;
+        padding: 0rem 10rem 0rem 10rem;
+      }
     }
 
-  .shortcut {
-    margin: auto;
-    width: 26rem;
-    height: 6rem;
-    font-size: 1.2rem;
+    .shortcut {
+      margin: auto;
+      width: 26rem;
+      height: 6rem;
+      font-size: 1.2rem;
 
-    &__desing--icon {
+      &__desing--icon {
         font-size: 1.8rem;
       }
 
-    &__fullout--icon{
+      &__fullout--icon {
         font-size: 2rem;
       }
 
-    &__share--icon {
+      &__share--icon {
         font-size: 2rem;
       }
-  }
+    }
 
-  .button__start {
-    margin: 12rem 20rem 6rem 20rem;
+    .button__start {
+      margin: 12rem 20rem 6rem 20rem;
+    }
   }
-
-  }
-
 }
 
-
- @media all and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .body {
-
-   .button__start {
-    margin: 12rem 28rem 6rem 28rem;
-   }
-
+    .button__start {
+      margin: 12rem 28rem 6rem 28rem;
+    }
   }
-
 }
