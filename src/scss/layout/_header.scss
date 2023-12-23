@@ -9,7 +9,7 @@
 
   &--img {
     margin: 6rem 2.2rem 1rem 2.2rem;
-    width: 15.6rem;
+    width: 100%;
     height: 4rem;
   }
 }
@@ -33,7 +33,7 @@ height: 2.5rem;
 @media all and (min-width: 768px) {
   
   .page__header {
-    width: 48rem;
+    width: 100%;
     height: 29.6rem;
     background-color: $color-bg-white-four;
   }
@@ -48,11 +48,14 @@ height: 2.5rem;
       margin: 20rem 10.8rem 1.5rem 10.8rem;
     }
   }
+ }
 
+ @media all and (min-width: 1024px) {
+
+  .page__header {
+    width: 100%;
+    height: 29.6rem;
+    background-color: $color-bg-white-four;
   }
-
-
-
-  // @media all and (min-width: 1024px)
-
-
+ }
+ 
