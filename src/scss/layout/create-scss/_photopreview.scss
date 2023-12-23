@@ -26,6 +26,7 @@
     @media only screen and (max-width: 480px) {
 
         .photoPreview {
+            width: 320px;
             background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
             display: flex;
             flex-direction: column;
@@ -37,6 +38,7 @@
                 display: flex;
                 justify-content: left;
                 align-items: flex-start;
+                margin-right: 172px;
 
                 .resetBtn {
                     height: 30px;
@@ -146,6 +148,7 @@
     @media only screen and (min-width: 481px) and (max-width: 768px){
 
         .photoPreview {
+            width: 760px;
             background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
             display: flex;
             flex-direction: column;
@@ -158,11 +161,13 @@
                     height: 30px;
                     width: 75px;
                     margin-top: 38px;
+                    right: 30px;
                     cursor: pointer;
                     border: 1px solid;
                     border-radius: 50px;
                     background-color: transparent;
                     border-color: $color-bg-main;
+                    margin-right: 183px;
                 }
             }
     
@@ -172,7 +177,6 @@
                 position: relative;
                 margin-bottom: 40px;
                 margin-top: 20px;
-                top: 20%;
                 order: 2;
 
         
@@ -254,7 +258,7 @@
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
         .photoPreview {
-            width: 100vw;
+            width: 1020px;
             background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
             display: flex;
             flex-direction: column;
@@ -273,6 +277,7 @@
                 border-radius: 50px;
                 background-color: transparent;
                 border-color: $color-bg-main;
+                margin-right: 182px;
             }
         }
     
@@ -282,7 +287,6 @@
             position: relative;
             margin-bottom: 40px;
             margin-top: 20px;
-            top: 20%;
             order: 2;
     
     
@@ -506,6 +510,8 @@
             width: 250px;
             margin-bottom: 40px;
             margin-top: 20px;
+            top: 0;
+            right: 30px;
             
     
             .adalaberName {
@@ -587,108 +593,108 @@
     color: $color-slate;
     }  
 
-.photoPreview {
+    .photoPreview {
     background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: center;
 
-    .btn{
+        .btn{
         order: 1;
         display: flex;
         justify-content: left;
         align-items: flex-start;
 
-        .resetBtn {
-            height: 30px;
-            width: 75px;
-            margin-top: 38px;
-            cursor: pointer;
-            border: 1px solid;
-            border-radius: 50px;
-            background-color: transparent;
-            border-color: $color-bg-main;
-        }
-    }
-
-
-    .cardPreview {
-        order: 2;
-        background-color: $color-bg-main;
-        box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
-        position: relative;
-        height: 425px;
-        width: 250px;
-        margin-bottom: 40px;
-        margin-top: 20px;
-        
-
-        .adalaberName {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding-left: 20px;
-            display: flex;
-            flex-direction: column;
-            border-left: 5px solid;
-            border-color: $color-slate;
-        }
-        .icons {
-            margin: 3rem 0;
-            gap: 1rem;
-            font-size: 1.25rem;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-            
-            .contactIcons{
+            .resetBtn {
+                height: 30px;
+                width: 75px;
+                margin-top: 38px;
                 cursor: pointer;
-
-                .mobile {
-                    width: 32px;
-                    height: 32px;
-                    margin: 0 10px 0 0;
-                    padding: 7px 10px;
-                    border-radius: 50%;
-                    border: solid 3px;
-                    color: $color-faded-orange;
-                    border-color: $color-light-grey-blue;
+                border: 1px solid;
+                border-radius: 50px;
+                background-color: transparent;
+                border-color: $color-bg-main;
                 }
+        }
 
-                .mailto {
-                    width: 32px;
-                    height: 32px;
-                    margin: 0 10px 0 0;
-                    padding: 7px 10px;
-                    border-radius: 50%;
-                    border: solid 3px;
-                    color: $color-faded-orange;
-                    border-color: $color-light-grey-blue;
-                }
 
-                .linkedin {
-                    width: 32px;
-                    height: 32px;
-                    margin: 0 10px 0 0;
-                    padding: 7px 10px;
-                    border-radius: 50%;
-                    border: solid 3px;
-                    color: $color-faded-orange;
-                    border-color: $color-light-grey-blue;
-                }
-                .github {
-                    width: 32px;
-                    height: 32px;
-                    margin: 0 10px 0 0;
-                    padding: 7px 10px;
-                    border-radius: 50%;
-                    border: solid 3px;
-                    color: $color-faded-orange;
-                    border-color: $color-light-grey-blue;
+        .cardPreview {
+            order: 2;
+            background-color: $color-bg-main;
+            box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+            position: relative;
+            height: 425px;
+            width: 250px;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            
+
+            .adalaberName {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                border-left: 5px solid;
+                border-color: $color-slate;
+            }
+            .icons {
+                margin: 3rem 0;
+                gap: 1rem;
+                font-size: 1.25rem;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                
+                .contactIcons{
+                    cursor: pointer;
+
+                    .mobile {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-faded-orange;
+                        border-color: $color-light-grey-blue;
+                    }
+
+                    .mailto {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-faded-orange;
+                        border-color: $color-light-grey-blue;
+                    }
+
+                    .linkedin {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-faded-orange;
+                        border-color: $color-light-grey-blue;
+                    }
+                    .github {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-faded-orange;
+                        border-color: $color-light-grey-blue;
+                    }
                 }
             }
-        }
 
-       }
+         }
     }
 }
