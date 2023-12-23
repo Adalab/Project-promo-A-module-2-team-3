@@ -26,7 +26,6 @@
     @media only screen and (max-width: 480px) {
 
         .photoPreview {
-            width: 100vw;
             background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
             display: flex;
             flex-direction: column;
@@ -147,7 +146,6 @@
     @media only screen and (min-width: 481px) and (max-width: 768px){
 
         .photoPreview {
-            width: 100vw;
             background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
             display: flex;
             flex-direction: column;
@@ -473,34 +471,114 @@
         color: $color-dried-blood;
     }  
 
-    .cardPreview {
-        .adalaberName {
-            border-color: $color-dried-blood;
+    .photoPreview {
+        background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+
+        .btn{
+            order: 1;
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+
+            .resetBtn {
+                height: 30px;
+                width: 75px;
+                margin-top: 38px;
+                cursor: pointer;
+                border: 1px solid;
+                border-radius: 50px;
+                background-color: transparent;
+                border-color: $color-bg-main;
+            }
         }
 
-            .contactIcons{
+    
+        .cardPreview {
+            order: 2;
+            background-color: $color-bg-main;
+            box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+            position: relative;
+            height: 425px;
+            width: 250px;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            
+    
+            .adalaberName {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                border-left: 5px solid;
+                border-color: $color-dried-blood;
+            }
+            .icons {
+                margin: 3rem 0;
+                gap: 1rem;
+                font-size: 1.25rem;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                
+                .contactIcons{
+                    cursor: pointer;
 
-                .mobile {
-                    color: $color-rusty-red;
-                    border-color: $color-tomato;
-                }
+                    .mobile {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-rusty-red;
+                        border-color: $color-tomato;
+                    }
 
-                .mailto {
-                    color: $color-rusty-red;
-                    border-color: $color-tomato;
-                }
+                    .mailto {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-rusty-red;
+                        border-color: $color-tomato;
+                    }
 
-                .linkedin {
-                    color: $color-rusty-red;
-                    border-color: $color-tomato;
+                    .linkedin {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-rusty-red;
+                        border-color: $color-tomato;
+                    }
+                    .github {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-rusty-red;
+                        border-color: $color-tomato;
+                    }
                 }
-                .github {
-                    color: $color-rusty-red;
-                    border-color: $color-tomato;
-                }
+            }
+
            }
         }
- }
+    }
+ 
+
+ 
 
 //COLORES PALETA 3
 .palette3 {
@@ -509,31 +587,108 @@
     color: $color-slate;
     }  
 
-  .cardPreview {
-    .adalaberName {
-        border-color: $color-slate;
+.photoPreview {
+    background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+
+    .btn{
+        order: 1;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+
+        .resetBtn {
+            height: 30px;
+            width: 75px;
+            margin-top: 38px;
+            cursor: pointer;
+            border: 1px solid;
+            border-radius: 50px;
+            background-color: transparent;
+            border-color: $color-bg-main;
+        }
     }
 
-        .contactIcons{
 
-            .mobile {
-                color: $color-faded-orange;
-                border-color: $color-light-grey-blue;
-            }
+    .cardPreview {
+        order: 2;
+        background-color: $color-bg-main;
+        box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+        position: relative;
+        height: 425px;
+        width: 250px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        
 
-            .mailto {
-                color: $color-faded-orange;
-                border-color: $color-light-grey-blue;
-            }
+        .adalaberName {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            border-left: 5px solid;
+            border-color: $color-slate;
+        }
+        .icons {
+            margin: 3rem 0;
+            gap: 1rem;
+            font-size: 1.25rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            
+            .contactIcons{
+                cursor: pointer;
 
-            .linkedin {
-                color: $color-faded-orange;
-                border-color: $color-light-grey-blue;
-            }
-            .github {
-                color: $color-rusty-red;
-                border-color: $color-light-grey-blue;
+                .mobile {
+                    width: 32px;
+                    height: 32px;
+                    margin: 0 10px 0 0;
+                    padding: 7px 10px;
+                    border-radius: 50%;
+                    border: solid 3px;
+                    color: $color-faded-orange;
+                    border-color: $color-light-grey-blue;
+                }
+
+                .mailto {
+                    width: 32px;
+                    height: 32px;
+                    margin: 0 10px 0 0;
+                    padding: 7px 10px;
+                    border-radius: 50%;
+                    border: solid 3px;
+                    color: $color-faded-orange;
+                    border-color: $color-light-grey-blue;
+                }
+
+                .linkedin {
+                    width: 32px;
+                    height: 32px;
+                    margin: 0 10px 0 0;
+                    padding: 7px 10px;
+                    border-radius: 50%;
+                    border: solid 3px;
+                    color: $color-faded-orange;
+                    border-color: $color-light-grey-blue;
+                }
+                .github {
+                    width: 32px;
+                    height: 32px;
+                    margin: 0 10px 0 0;
+                    padding: 7px 10px;
+                    border-radius: 50%;
+                    border: solid 3px;
+                    color: $color-faded-orange;
+                    border-color: $color-light-grey-blue;
+                }
             }
         }
+
+       }
     }
 }
