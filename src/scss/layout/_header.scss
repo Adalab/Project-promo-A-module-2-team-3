@@ -1,23 +1,25 @@
 .page__header {
   width: 100vw;
-  height: 12rem;
-  background-color: $color-bg-white-four;
+  height: 6rem;
+  background-color: $color-bg-white-two;
 }
 
 .page__header__boximg {
   display: flex;
+  background-color: $color-bg-white-four;
 
   &--img {
-    margin: 6rem 2.2rem 1rem 2.2rem;
-    width: 100%;
+    margin: 2rem 3.5rem 1r.5em 3.5rem;
+    width: 70%;
     height: 4rem;
+
   }
 }
 
 // Medidas del header para create
 .page__header__create {
-  width: 20rem;
-  height: 7rem;
+  width: 100%;
+  height: 5rem;
   background-color: $color-bg-white-two;
 }
 
@@ -29,23 +31,29 @@ width: 12.5rem;
 height: 2.5rem;
 }
 
+.page__header__boximg--img__create {
+  width: 12rem;
+}
+
+
 
 @media all and (min-width: 768px) {
   
   .page__header {
     width: 100%;
-    height: 29.6rem;
+    height: 10rem;
     background-color: $color-bg-white-four;
   }
   
   .page__header__boximg {
     display: flex;
     justify-content:center;
+    background-color: $color-bg-white-four;
     
     &--img {
       width: 100vw;
-      height: 20vh;
-      margin: 20rem 10.8rem 1.5rem 10.8rem;
+      height: 14vh;
+      margin: 2rem 10.8rem 1.5rem 10.8rem;
     }
   }
  }
@@ -54,8 +62,12 @@ height: 2.5rem;
 
   .page__header {
     width: 100%;
-    height: 29.6rem;
+    height: 10rem;
     background-color: $color-bg-white-four;
   }
  }
- 
+
+ .page__header__boximg--img {
+  margin: 3.6rem 0rem 1.5rem 0rem;//esto me esta afectando la version movil no sé por que 
+  background-color: $color-bg-white-four;
+ }

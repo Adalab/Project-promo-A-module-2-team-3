@@ -93,14 +93,14 @@
   .box__button {
     display: flex;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 3rem;
 
     .box__button__start {
       background-color: $color-dirty-blue;
       width: 8rem;
       height: 2.6rem;
       border-radius: 2rem;
-      margin: 0rem 0rem 4.8rem 0rem;
+      margin: 0rem 0rem 3rem 0rem;
       border-style: none;
       font-family: $font-main;
       font-weight: 600; //me parece muy bold
@@ -154,6 +154,9 @@
   }
 }
 
+.page {
+  background-color: $color-bg-white-four;
+}
 @media all and (min-width: 1024px) {
   .body {
     .button__start {

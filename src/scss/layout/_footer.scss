@@ -3,6 +3,7 @@
   border-top: solid #d8d8d8;
   display: flex;
   justify-content: center;
+  background-color: white;
 
   // width: 20rem;
   // height: 6.8rem;
@@ -12,13 +13,13 @@
     font-size: 0.8rem;
     color: $color-brownish-grey;
     text-align: center;
-    margin: 1rem 0rem 1rem 0;
+    margin: 0.5rem 0rem 0.5rem 0;
   }
 
   &__general--adalogo {
     width: 6.4rem;
     height: 2.5rem;
-    margin: 0rem 6.7rem 1rem 6.7rem;
+    margin: 0rem 6.7rem 0.5rem 6.7rem;
 
   }
 

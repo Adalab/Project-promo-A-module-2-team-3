@@ -234,7 +234,6 @@ fieldset {
       align-items: center;
       justify-content: space-between;
       gap: 18px;
-      padding: 0px 20px;
     }
     &--icon {
       color: $color-dull-orange;
@@ -350,7 +349,7 @@ fieldset {
 .line {
   border-top: 1px solid #d8d8d8;
   height: 1px;
-  width: 365px;
+  width: 85%;
   padding: 0;
   margin: 7px auto 0 auto;
 }
@@ -379,4 +378,7 @@ fieldset {
 }
 .collapsible__colours--show .collapsible__colours {
   display: flex;
+}
+.collapsible__fieldset {
+  padding: 20px 20px
 }
