@@ -8,9 +8,10 @@
   </div>
   <div class="collapsible__colours collapsible__colours--hide">
     <div class="share-container__button collapsible__content js__createButton">
-      <button class="share-container__button--styles share-container__button--styles--grey js__btnColor" id="share-btn">
+      <button class="share-container__button--styles share-container__button--styles--grey js__btnColor js_btnCreateCard" id="share-btn">
         <i class="share-container__button--icon-card fa-regular fa-address-card"></i>CREAR TARJETA
       </button>
+     
     </div>
     <div class="line"></div>
     <div class="share-container__twitter collapsible__content-twitter js_createCard hidden" id="share-div">
@@ -19,11 +20,15 @@
           La tarjeta ha sido creada:
         </p>
       </div>
-      <a href="#" target="_blank"
-        class="share-container__twitter--link">https://awesome-profile-card.com?id=A456DF0001</a>
-      <a class="share-container__twitter--ico-twitter" href="https://twitter.com/intent/tweet" data-size="large"
-        target="_blank"><i class="fa-brands fa-x-twitter"></i>Compartir en X</a>
+      <section class="js_shareLinkContainer">
+        <a href="#" target="_blank"
+          class="share-container__twitter--link">https://awesome-profile-card.com?id=A456DF0001</a>
+        <a class="share-container__twitter--ico-twitter" href="https://twitter.com/intent/tweet" data-size="large"
+          target="_blank"><i class="fa-brands fa-x-twitter"></i>Compartir en X</a>
+      </section>
+     
     </div>
+    <section class="share-container__twitter collapsible__content-twitter js_shareErrorContainer" ></section>
   </div>
   <div class="line"></div>
 </fieldset>
