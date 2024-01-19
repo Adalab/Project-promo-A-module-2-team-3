@@ -164,6 +164,7 @@
                 border-color: $color-input-form;
                 color: #114e4e;
             }
+<<<<<<< HEAD
 
             .mailto {
                 width: 32px;
@@ -174,8 +175,99 @@
                 border: solid 3px;
                 border-color: $color-input-form;
                 color: #114e4e;
+=======
+    
+        
+            // .cardPreview {
+            //     order: 2;
+            //     background-color: $color-bg-main;
+            //     box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+            //     position: relative;
+            //     height: 425px;
+            //     width: 250px;
+            //     margin-bottom: 40px;
+            //     margin-top: 20px;
+            
+        
+        
+                .adalaberName {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 5px solid;
+                    border-color: $color-dirty-blue;
+                }
+        
+                .image {
+                    width: 400px;
+                    height: 400px;
+                    background-image: url('../../../../public/images/test.jpeg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+        
+                .icons {
+                    margin: 3rem 0;
+                    gap: 1rem;
+                    font-size: 1.25rem;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    
+                    .contactIcons{
+                        cursor: pointer;
+        
+                        .mobile {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+        
+                        .mailto {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+        
+                        .linkedin {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+                        .github {
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 10px 0 0;
+                            padding: 7px 10px;
+                            border-radius: 50%;
+                            border: solid 3px;
+                            border-color: $color-input-form;
+                            color: #114e4e;
+                        }
+                    }
+                }
+>>>>>>> 0b9c111ac1f9b34de80d4d49699b225a062cdf3d
             }
 
+<<<<<<< HEAD
             .linkedin {
                 width: 32px;
                 height: 32px;
@@ -185,6 +277,34 @@
                 border: solid 3px;
                 border-color: $color-input-form;
                 color: #114e4e;
+=======
+    
+
+    @media only screen and (min-width: 481px) and (max-width: 768px){
+
+        .photoPreview {
+            width: 760px;
+            background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+
+            .btn{
+                order: 1;
+                .resetBtn {
+                    height: 30px;
+                    width: 75px;
+                    margin-top: 38px;
+                    right: 30px;
+                    cursor: pointer;
+                    border: 1px solid;
+                    border-radius: 50px;
+                    background-color: transparent;
+                    border-color: $color-bg-main;
+                    margin-right: 183px;
+                }
+>>>>>>> 0b9c111ac1f9b34de80d4d49699b225a062cdf3d
             }
 
             .github {
@@ -213,6 +333,7 @@
         color: $color-dark-green-blue;
     }
 
+<<<<<<< HEAD
     h3 {
         color: $color-gunmetal;
         font-weight: lighter;
@@ -249,6 +370,126 @@
     .adalaberName {
         border-color: $color-dried-blood;
     }
+=======
+//COLORES PALETAS 1 
+.palette1 {
+
+    h2 {
+        color: $color-dark-green-blue;
+    }  
+
+    .photoPreview {
+        background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+
+        .btn{
+            order: 1;
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+
+            .resetBtn {
+                height: 30px;
+                width: 75px;
+                margin-top: 38px;
+                cursor: pointer;
+                border: 1px solid;
+                border-radius: 50px;
+                background-color: transparent;
+                border-color: $color-bg-main;
+            }
+        }
+
+    
+        .cardPreview {
+            order: 2;
+            background-color: $color-bg-main;
+            box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 rgba(0, 0, 0.35);
+            position: relative;
+            height: 425px;
+            width: 250px;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            top: 0;
+            right: 30px;
+            
+    
+            .adalaberName {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                border-left: 5px solid;
+                border-color: $color-dark-green-blue;
+            }
+            .icons {
+                margin: 3rem 0;
+                gap: 1rem;
+                font-size: 1.25rem;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                
+                .contactIcons{
+                    cursor: pointer;
+
+                    .mobile {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-dark-green-blue;
+                        border-color: $color-dirty-blue;
+                    }
+
+                    .mailto {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-dark-green-blue;
+                        border-color: $color-dirty-blue;
+                    }
+
+                    .linkedin {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-dark-green-blue;
+                        border-color: $color-dirty-blue;
+                    }
+                    .github {
+                        width: 32px;
+                        height: 32px;
+                        margin: 0 10px 0 0;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        border: solid 3px;
+                        color: $color-dark-green-blue;
+                        border-color: $color-dirty-blue;
+                    }
+                }
+            }
+
+           }
+        }
+    }
+
+// COLORES PALETA 2
+
+.palette2 {
+>>>>>>> 0b9c111ac1f9b34de80d4d49699b225a062cdf3d
 
     h2 {
         color: $color-dried-blood;
