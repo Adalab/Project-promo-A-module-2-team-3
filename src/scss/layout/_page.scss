@@ -154,6 +154,9 @@
   }
 }
 
+.page {
+  background-color: $color-bg-white-four;
+}
 @media all and (min-width: 1024px) {
   .body {
     .button__start {
