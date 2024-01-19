@@ -14,8 +14,9 @@ const githubInput = document.querySelector(".js_githubInput");
 const previewGithub = document.querySelector(".js_github");
 
 const btnCreateCard = document.querySelector('.js_btnCreateCard');
-const shareResponseContainer = document.querySelector('.js_shareLinkContainer');
-const js_shareLinkContainer = document.querySelector('.js_shareLinkContainer');
+const shareLinkContainer = document.querySelector('.js_shareLinkContainer');
+const shareLink = document.querySelector('.js_shareLink');
+const shareErrorContainer = document.querySelector('.js_shareErrorContainer');
 
 
 function handleClickCreate (event){
@@ -33,8 +34,16 @@ fetch('https://dev.adalab.es/api/card/', {
 
   if ( dataResponse.success ) {
     
+    shareLinkContainer.classList.remove ('hidden');
+
+    shareLink.href = dataResponse.cardURL;
+    shareLink.innerHTML = dataResponse.cardURL;
 
   } else{
+
+    shareErrorContainer.classList.remove ('hidden');
+    shareErrorContainer.innerHTML = dataResponse.error;
+
     //mostrar mensaje de error 
   }
 
