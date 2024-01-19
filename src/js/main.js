@@ -5,7 +5,7 @@ console.log('>> Ready :)');
 //hay que decir el orden en el que tiene quedar
 
 const data = {
-    palette: '',
+    palette: '1',
     name: '',
     job: '',
     photo: '',

@@ -13,6 +13,44 @@ const previewLinkedin = document.querySelector(".js_linkedin");
 const githubInput = document.querySelector(".js_githubInput");
 const previewGithub = document.querySelector(".js_github");
 
+const btnCreateCard = document.querySelector('.js_btnCreateCard');
+const shareLinkContainer = document.querySelector('.js_shareLinkContainer');
+const shareLink = document.querySelector('.js_shareLink');
+const shareErrorContainer = document.querySelector('.js_shareErrorContainer');
+
+
+function handleClickCreate (event){
+event.preventDefault()
+console.log('crear tarjeta');
+
+fetch('https://dev.adalab.es/api/card/', {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json' },
+  body: JSON.stringify(data)
+})
+.then(response => response.json())
+.then(dataResponse =>{
+  console.log(dataResponse)
+
+  if ( dataResponse.success ) {
+    
+    shareLinkContainer.classList.remove ('hidden');
+
+    shareLink.href = dataResponse.cardURL;
+    shareLink.innerHTML = dataResponse.cardURL;
+
+  } else{
+
+    shareErrorContainer.classList.remove ('hidden');
+    shareErrorContainer.innerHTML = dataResponse.error;
+
+    //mostrar mensaje de error 
+  }
+
+})
+}
+
+
 nameInput.addEventListener("input", (event) => {
   data.name = event.currentTarget.value;
   previewFullName.innerHTML = data.name;
@@ -43,3 +81,6 @@ githubInput.addEventListener("input", (event) => {
   data.github = event.currentTarget.value;
   previewGithub.href = `https://github.com/${data.github}`;
 });
+
+
+btnCreateCard.addEventListener ('click', (handleClickCreate));
