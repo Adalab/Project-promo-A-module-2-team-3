@@ -19,6 +19,7 @@ const shareLink = document.querySelector('.js_shareLink');
 const shareErrorContainer = document.querySelector('.js_shareErrorContainer');
 
 
+
 function handleClickCreate (event){
 event.preventDefault()
 console.log('crear tarjeta');
@@ -42,10 +43,10 @@ fetch('https://dev.adalab.es/api/card/', {
   } else{
 
     shareErrorContainer.classList.remove ('hidden');
-    shareErrorContainer.innerHTML = dataResponse.error;
-
-    //mostrar mensaje de error 
+    shareErrorContainer.innerHTML = dataResponse.error; 
   }
+
+  localStorage.setItem("data", JSON.stringify(data));
 
 })
 }
